@@ -21,7 +21,7 @@ Desktop Preview
 ![](./src/assets/screenshot/desktop-preview.png)
 
 ### Mobile Preview
-<img src="./src/assets/screenshot/mobile-design-home-light.png" width="300">
+<img src="./src/assets/screenshot/mobile-preview.png" width="300">
 
 ### Links
 
