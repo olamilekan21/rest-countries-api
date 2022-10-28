@@ -15,7 +15,9 @@ function App() {
 
   const fetchData = async () => {
     setLoading(true);
-    const res = await fetch(`${url}?fields=name,flags,population,region,capital`);
+    const res = await fetch(
+      `${url}?fields=name,flags,population,region,capital`
+    );
     const json = await res.json();
     setData(json);
     setLoading(false);
@@ -27,7 +29,9 @@ function App() {
 
   const fetchRegion = async (value: string) => {
     setLoading(true);
-    const res = await fetch(`${regionUrl}/${value.toLowerCase()}?fields=name,flags,population,region,capital`);
+    const res = await fetch(
+      `${regionUrl}/${value.toLowerCase()}?fields=name,flags,population,region,capital`
+    );
     const json = await res.json();
     setData(json);
     setLoading(false);
@@ -35,7 +39,9 @@ function App() {
   const fetchName = async (value: string) => {
     if (value.length > 0) {
       setLoading(true);
-      const res = await fetch(`${searchUrl}/${value.toLowerCase()}?fields=name,flags,population,region,capital`);
+      const res = await fetch(
+        `${searchUrl}/${value.toLowerCase()}?fields=name,flags,population,region,capital`
+      );
       const json = await res.json();
       setData(json);
       setLoading(false);
@@ -47,14 +53,16 @@ function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <FilterCard fetchRegion={fetchRegion} fetchName={fetchName} />
-      {loading ? (
-        <div className="grid place-items-center h-40">
-          <ReactLoading type="spin" />
-        </div>
-      ) : (
-        <Cards data={data} />
-      )}
+      <main className="">
+        <FilterCard fetchRegion={fetchRegion} fetchName={fetchName} />
+        {loading ? (
+          <div className="grid place-items-center h-40">
+            <ReactLoading type="spin" />
+          </div>
+        ) : (
+          <Cards data={data} />
+        )}
+      </main>
     </div>
   );
 }
