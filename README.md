@@ -25,8 +25,8 @@ Desktop Preview
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/huddle-landing-page-with-alternating-feature-blocks-html-and-css-aNXYBFr8I9)
-- Live Site URL: [Live Site at Vercel](https://ecommerce-product-page-eight-khaki.vercel.app/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-QRkf_eWLfp)
+- Live Site URL: [Live Site at Vercel](https://rest-countries-api-pi-beryl.vercel.app/)
 ## My process
 
 ### Built with
